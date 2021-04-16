@@ -1,0 +1,12 @@
+- short-name: Learn
+  name: Learning Personas
+  description: Take a look at our learning pathways, based on typical digital roles
+  button: Browse the Personas
+- short-name: Play
+  name: Web 101
+  description: Ask us to run our interactive Web 101 course for your team
+  button: Book the course
+- short-name: Transform
+  name: Innovation Lab
+  description: Ask us to run an innovation session for your project
+  button: Get in touch

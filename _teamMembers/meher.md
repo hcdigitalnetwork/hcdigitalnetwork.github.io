@@ -5,6 +5,6 @@ op_unit: Change
 image: /assets/img/meher.png
 ---
 **Ask me about**
-Business Analysis
-Figma
-Wireframing
+- Business Analysis
+- Figma
+- Wireframing

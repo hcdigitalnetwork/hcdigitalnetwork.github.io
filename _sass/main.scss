@@ -1,24 +1,37 @@
-$success: #bbe370;
+$success: #00a650;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../assets/bootstrap/scss/bootstrap";
 
 
-
+// Body bg
+body {
+  background-color: #fafafa;
+}
 
 //nav styling
 nav {
   background-color: $gray-200;
   padding: 0.5rem;
-  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.1);
 }
 
 .active {
   color: $secondary;
 }
 
-.masthead{
-  background-color: $success;
+.masthead p {
+  font-size: 1.3em;
+}
+
+
+
+.masthead img {
+  max-width: 100%;
+}
+
+
+.tagline span{
+  color: $success;
 }
 
 .card ul {

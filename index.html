@@ -1,32 +1,46 @@
 ---
 layout: default
-title: Home
+title: Home - Digital Network
 ---
-<div class="row">
-  <div class="col masthead p-3 mb-3">
-    <h3>Hello there! We are the Digital Network</h3>
-    <p>We empower colleagues with the skills, mindset and support to lead and deliver modern organisational transformations.
-    <p>We want to make ourselves defunct.</p>
-    <p>This will be achieved at the point people no longer see the word ‘digital’ as something unknown or intimidating, instead understanding that the work they already do, with the skills we’ve helped them to grow, are a valuable part of this agenda.</p>
-  </div>
-</div>
+{% include masthead.html %}
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  {% for teamMember in site.teamMembers  %}
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-body">
-          <div class="row align-items-center">
-            <div class="col-sm-5">
-              <img class="teamImage" src="{{ teamMember.image }}"  alt="">
-            </div>
-            <div class="col-sm-7">
-              <h5 class="card-title">{{ teamMember.name }}</h5>
-              <p class="card-text">{{ teamMember.content | markdownify }}</p>
+<!-- Loop through callouts for each key message -->
+<div class="main-section p-3 mt-3">
+  <div class="container">
+    <div class="row">
+      {% for item in site.data.callouts %}
+      <div class="col-md-4 text-center mb-3">
+        <h6>{{ item.short-name }}</h6>
+        <h1>{{ item.name }}</h1>
+        <p class="lead">{{ item.description }}</p>
+        <a href="#" class="btn btn-outline-success" role="button">{{ item.button }}</a>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- About us -->
+    <div class="row mt-3">
+      <h1>Say hello!</h1>
+      <p>Our network is just a fancy name for a group of people. Meet us below, and if you'd like a chat just drop us an email</p>
+    </div>
+    <!-- Loop through team members in a card grid -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for teamMember in site.teamMembers  %}
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-5">
+                  <img class="teamImage" src="{{ teamMember.image }}"  alt="">
+                </div>
+                <div class="col-7">
+                  <h5 class="card-title">{{ teamMember.name }}</h5>
+                  <p class="card-text">{{ teamMember.content | markdownify }}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+  </div>
 </div>
