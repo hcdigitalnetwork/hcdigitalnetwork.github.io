@@ -1,0 +1,49 @@
+$success: #bbe370;
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../assets/bootstrap/scss/bootstrap";
+
+
+
+
+//nav styling
+nav {
+  background-color: $gray-200;
+  padding: 0.5rem;
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  color: $secondary;
+}
+
+.masthead{
+  background-color: $success;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.teamImage{
+  max-width:100%;
+  max-height: 100%;
+}
+
+.card-header {
+  background-color: $success;
+}
+
+.persona-title {
+  color: $success;
+}
+
+.persona li a {
+  color: $success;
+}
+
+.persona ul {
+  list-style: disc;
+  padding-left: 1rem;
+}

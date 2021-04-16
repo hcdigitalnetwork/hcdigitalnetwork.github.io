@@ -1,0 +1,23 @@
+<nav mb-2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="nav ">
+          {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a href="{{item.link}}" } class="nav-link {% if page.url == item.link %} active {% endif %}" >
+            {{ item.name | upcase}}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <h3>Digital Network</h3>
+      </div>
+      <div class="col-md-4 d-flex justify-content-end">
+        <a href="#" class="btn btn-success" role="button">Sign up</a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,32 @@
+---
+layout: default
+title: Home
+---
+<div class="row">
+  <div class="col masthead p-3 mb-3">
+    <h3>Hello there! We are the Digital Network</h3>
+    <p>We empower colleagues with the skills, mindset and support to lead and deliver modern organisational transformations.
+    <p>We want to make ourselves defunct.</p>
+    <p>This will be achieved at the point people no longer see the word ‘digital’ as something unknown or intimidating, instead understanding that the work they already do, with the skills we’ve helped them to grow, are a valuable part of this agenda.</p>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for teamMember in site.teamMembers  %}
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-sm-5">
+              <img class="teamImage" src="{{ teamMember.image }}"  alt="">
+            </div>
+            <div class="col-sm-7">
+              <h5 class="card-title">{{ teamMember.name }}</h5>
+              <p class="card-text">{{ teamMember.content | markdownify }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
