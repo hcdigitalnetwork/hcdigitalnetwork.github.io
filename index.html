@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home - Digital Network
+title: Home - HC Digital Network
 ---
 {% include masthead.html %}
 
@@ -13,7 +13,7 @@ title: Home - Digital Network
         <h6>{{ item.short-name }}</h6>
         <h1>{{ item.name }}</h1>
         <p class="lead">{{ item.description }}</p>
-        <a href="#" class="btn btn-outline-success" role="button">{{ item.button }}</a>
+        <a href="{{ item.link }}" class="btn btn-outline-success" role="button">{{ item.button }}</a>
       </div>
       {% endfor %}
     </div>
@@ -27,8 +27,8 @@ title: Home - Digital Network
       {% for teamMember in site.teamMembers  %}
         <div class="col">
           <div class="card h-100">
-            <div class="card-body">
-              <div class="row align-items-center">
+            <div class="card-body d-flex align-items-center">
+              <div class="row">
                 <div class="col-5">
                   <img class="teamImage" src="{{ teamMember.image }}"  alt="">
                 </div>

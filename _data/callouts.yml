@@ -2,11 +2,14 @@
   name: Learning Personas
   description: Take a look at our learning pathways, based on typical digital roles
   button: Browse the Personas
+  link: /learningPersonas.html
 - short-name: Play
   name: Web 101
   description: Ask us to run our interactive Web 101 course for your team
   button: Book the course
+  link: https://teams.microsoft.com/l/channel/19%3afc670ac71ead4524838cdde0d15373a1%40thread.tacv2/The%2520HC%2520Digital%2520Network?groupId=0bcb3fa7-b37f-4ae9-aac7-7716de14fbc2&tenantId=36da45f1-dd2c-4d1f-af13-5abe46b99921
 - short-name: Transform
   name: Innovation Lab
   description: Ask us to run an innovation session for your project
   button: Get in touch
+  link: https://teams.microsoft.com/l/channel/19%3afc670ac71ead4524838cdde0d15373a1%40thread.tacv2/The%2520HC%2520Digital%2520Network?groupId=0bcb3fa7-b37f-4ae9-aac7-7716de14fbc2&tenantId=36da45f1-dd2c-4d1f-af13-5abe46b99921

@@ -1,6 +1,4 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
-- name: Learning Personas
-  link: /learningPersonas.html
+- name: Learning
+  link: /learning.html
