@@ -4,3 +4,7 @@ collections:
 title: HC Digital Network
 
 repository: hcdigitalnetwork/hcdigitalnetwork.github.io
+
+sass:
+  sass_dir: _sass
+  style: compressed
