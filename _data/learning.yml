@@ -1,0 +1,6 @@
+- name: Digital Crash Course
+  text: Links to essential external reading, videos and learning materials to get you up to speed on all things digital delivery
+  url: /crashcourse.html
+- name: Role-based learning personas
+  text: Wonder what you'd need to do to be a Business Analyst, or Robotic Process Automation? Our role-based learning personas give you an insight into these roles, and point to some specific learning materials to help you out
+  url: /learningPersonas.html
