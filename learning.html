@@ -6,22 +6,20 @@ title: Learning - HC Digital network
   <h1>Learning</h1>
 </div>
 <div class="container">
+<<<<<<< HEAD
   <div class="row mt-4">
+=======
+  <div class="row mt-3">
+    {% for item in site.data.learning %}
+>>>>>>> 026e988fd514d5a9e3404f0990cf711fcccb09ac
     <div class="col-md-6 mb-3">
       <div class="card" style="height: 10rem;">
         <div class="card-body">
-          <h3 class="card-title"><a href="/crashcourse.html">Digital Crash Course</a></h3>
-            <p class="card-text">Links to essential external reading, videos and learning materials to get you up to speed on all things digital delivery</p>
+          <h3 class="card-title"><a href="{{item.link}}">{{item.name}}</a></h3>
+            <p class="card-text">{{item.text}}<p>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card" style="height: 10rem;">
-        <div class="card-body">
-          <h3 class="card-title"><a href="/learningPersonas.html">Role-based learning personas</a></h3>
-          <p class="card-text">Wonder what you'd need to do to be a Business Analyst, or Robotic Process Automation? Our role-based learning personas give you an insight into these roles, and point to some specific learning materials to help you out</p>
-        </div>
-      </div>
-    </div>
-  </div
+    {% endfor %}
+  </div>
 </div>
